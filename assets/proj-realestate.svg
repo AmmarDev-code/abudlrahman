@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" width="100%" height="100%">
+  <rect width="400" height="220" fill="#181329"/>
+  <!-- Top bar -->
+  <rect width="400" height="28" fill="#281e46"/>
+  <circle cx="15" cy="14" r="4" fill="#a78bfa"/>
+  <text x="200" y="18" fill="#c4b5fd" font-family="sans-serif" font-size="10" text-anchor="middle">Real Estate &amp; Lease Manager</text>
+
+  <!-- Content cards -->
+  <g transform="translate(30, 45)">
+    <rect width="340" height="150" rx="12" fill="#20173b" stroke="#3b2b68" stroke-width="1.5"/>
+    
+    <text x="20" y="30" fill="#c084fc" font-family="sans-serif" font-size="12" font-weight="bold">🏢 Commercial Plaza Complex A</text>
+    <text x="20" y="48" fill="#94a3b8" font-family="sans-serif" font-size="9">Occupancy Rate: 94% • Active Contracts: 32</text>
+
+    <!-- Table Header -->
+    <rect x="20" y="65" width="300" height="22" rx="4" fill="#2e2154"/>
+    <text x="30" y="80" fill="#e9d5ff" font-family="sans-serif" font-size="9" font-weight="bold">Unit</text>
+    <text x="90" y="80" fill="#e9d5ff" font-family="sans-serif" font-size="9" font-weight="bold">Tenant</text>
+    <text x="170" y="80" fill="#e9d5ff" font-family="sans-serif" font-size="9" font-weight="bold">Rent / Mo</text>
+    <text x="240" y="80" fill="#e9d5ff" font-family="sans-serif" font-size="9" font-weight="bold">Status</text>
+
+    <!-- Row 1 -->
+    <text x="30" y="105" fill="#f8fafc" font-family="sans-serif" font-size="9">Shop 101</text>
+    <text x="90" y="105" fill="#94a3b8" font-family="sans-serif" font-size="9">Apex Tech</text>
+    <text x="170" y="105" fill="#10b981" font-family="sans-serif" font-size="9" font-weight="bold">$1,200</text>
+    <text x="240" y="105" fill="#10b981" font-family="sans-serif" font-size="8">✔ Paid</text>
+
+    <!-- Row 2 -->
+    <text x="30" y="128" fill="#f8fafc" font-family="sans-serif" font-size="9">Office 204</text>
+    <text x="90" y="128" fill="#94a3b8" font-family="sans-serif" font-size="9">Gulf Consult</text>
+    <text x="170" y="128" fill="#38bdf8" font-family="sans-serif" font-size="9" font-weight="bold">$850</text>
+    <text x="240" y="128" fill="#f59e0b" font-family="sans-serif" font-size="8">⏳ Due in 3d</text>
+  </g>
+</svg>

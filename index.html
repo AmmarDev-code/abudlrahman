@@ -1,0 +1,1377 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#ffffff">
+  <title>م. عبدالرحمن عبدالحكيم | مطور برمجيات ومصمم تجربة المستخدم وخبير محاسبي</title>
+  
+  <meta name="description" content="الموقع التعريفي ومعرض الأعمال للمهندس عبدالرحمن عبدالحكيم - خريج تقنية معلومات ومطور Full-Stack & Flutter ومصمم UI/UX بخبرة سنتين في إدارة العمليات المحاسبية والمبيعات.">
+  <meta name="keywords" content="عبدالرحمن عبدالحكيم, مطور برمجيات, فلاتر, Full-Stack, Flutter, UI/UX Designer, محاسبة, متجر إلكتروني مفتوح المصدر, تعز اليمن">
+  <meta name="author" content="Eng. Abdulrahman Abdulhakeem">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="م. عبدالرحمن عبدالحكيم | Full-Stack & UI/UX & خبير نظم محاسبية">
+  <meta property="og:description" content="أبني أنظمة برمجية ذكية بعقلية محاسبية ورؤية تسويقية وتصميم يركز على الإنسان.">
+  <meta property="og:image" content="assets/abdulrahman-photo.jpg">
+
+  <!-- Google Fonts: Cairo (Arabic) & Plus Jakarta Sans (English) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Custom Stylesheets (v=2.2 for fresh mobile cache) -->
+  <link rel="stylesheet" href="css/style.css?v=2.2">
+  <link rel="stylesheet" href="css/animations.css?v=2.2">
+</head>
+<body>
+
+  <!-- ======================================================================
+       SITE HEADER & NAVIGATION
+       ====================================================================== -->
+  <header class="site-header">
+    <div class="container nav-container">
+      
+      <!-- Brand Logo -->
+      <a href="#home" class="brand-logo" aria-label="Abdulrahman Abdulhakeem">
+        <div class="logo-icon">AA</div>
+        <div class="logo-text">
+          <span class="logo-name">عبدالرحمن عبدالحكيم</span>
+          <span class="logo-role" data-i18n="hero_badge">Full-Stack &amp; UI/UX &amp; خبير محاسبي</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="#home" class="nav-link active" data-i18n="nav_home">الرئيسية</a>
+        <a href="#about" class="nav-link" data-i18n="nav_about">الميزة التنافسية</a>
+        <a href="#skills" class="nav-link" data-i18n="nav_skills">الترسانة التقنية</a>
+        <a href="#spotlight" class="nav-link" data-i18n="nav_spotlight">المشروع الرئيسي</a>
+        <a href="#timeline" class="nav-link" data-i18n="nav_timeline">المسار المهني</a>
+        <a href="#services" class="nav-link" data-i18n="nav_services">خدماتي</a>
+        <a href="#projects" class="nav-link" data-i18n="nav_projects">معرض الأعمال</a>
+        <a href="#contact" class="nav-link" data-i18n="nav_contact">تواصل معي</a>
+      </nav>
+
+      <!-- Action Controls: Language, Theme, CV, Hamburger -->
+      <div class="nav-actions">
+        <!-- Language Switcher -->
+        <button id="langToggleBtn" class="pill-btn" aria-label="Toggle Language" title="تغيير اللغة / Switch Language">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="2" y1="12" x2="22" y2="12"></line>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+          </svg>
+          <span class="lang-label">English</span>
+        </button>
+
+        <!-- Theme Switcher (Dark / Light) -->
+        <button id="themeToggleBtn" class="pill-btn" aria-label="Toggle Dark/Light Mode" title="الوضع الليلي / النهاري">
+          <span id="themeIcon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </span>
+        </button>
+
+        <!-- CV Direct Download Trigger Link -->
+        <a href="assets/CV_Eng_Abdulrahman_Abdulhakeem.pdf" download="CV_Eng_Abdulrahman_Abdulhakeem.pdf" class="btn btn-secondary btn-icon nav-header-cv-btn" id="navCvDownloadBtn" title="تحميل السيرة الذاتية PDF" aria-label="Download CV PDF" target="_blank">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="hamburgerBtn" class="hamburger-btn" aria-label="Open Mobile Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobileDrawer" class="mobile-drawer" aria-hidden="true">
+    <div class="drawer-panel">
+      <div class="drawer-header">
+        <span class="logo-name" style="font-weight:800;">عبدالرحمن عبدالحكيم</span>
+        <button id="drawerCloseBtn" class="modal-close" aria-label="Close Mobile Drawer">✕</button>
+      </div>
+      <div class="drawer-menu">
+        <a href="#home" class="drawer-link" data-i18n="nav_home">الرئيسية</a>
+        <a href="#about" class="drawer-link" data-i18n="nav_about">الميزة التنافسية</a>
+        <a href="#skills" class="drawer-link" data-i18n="nav_skills">الترسانة التقنية</a>
+        <a href="#spotlight" class="drawer-link" data-i18n="nav_spotlight">المشروع الرئيسي</a>
+        <a href="#timeline" class="drawer-link" data-i18n="nav_timeline">المسار المهني</a>
+        <a href="#services" class="drawer-link" data-i18n="nav_services">خدماتي</a>
+        <a href="#projects" class="drawer-link" data-i18n="nav_projects">معرض الأعمال</a>
+        <a href="#contact" class="drawer-link" data-i18n="nav_contact">تواصل معي</a>
+        <a href="assets/CV_Eng_Abdulrahman_Abdulhakeem.pdf" download="CV_Eng_Abdulrahman_Abdulhakeem.pdf" class="drawer-link" id="drawerCvDownloadBtn" target="_blank">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle; margin-inline-end:6px;">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span data-i18n="nav_cv">تحميل السيرة الذاتية (CV)</span>
+        </a>
+      </div>
+      <div style="margin-top:auto; padding-top:1.5rem; border-top:1px solid var(--border-subtle);">
+        <a href="#" class="btn btn-emerald whatsapp-link" style="width:100%;" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/>
+          </svg>
+          <span data-i18n="nav_whatsapp">واتساب مباشر</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       1. HERO SECTION
+       ====================================================================== -->
+  <section id="home" class="hero-section">
+    <div class="hero-background-glow"></div>
+    <div class="container hero-grid">
+      
+      <!-- Hero Left/Start Text Content -->
+      <div class="hero-text-content">
+        
+        <!-- Live Status Pill -->
+        <div class="hero-badge-container">
+          <div class="hero-live-badge">
+            <span class="status-dot"></span>
+            <span data-i18n="hero_badge">مطور برمجيات شامل & مصمم UI/UX | خبير أنظمة محاسبية</span>
+          </div>
+        </div>
+
+        <!-- Headline -->
+        <h1 class="hero-title">
+          <span data-i18n="hero_title">أبني أنظمة برمجية ذكية..</span><br>
+          <span class="gradient-text" data-i18n="hero_title_highlight">بعقلية محاسبية ورؤية تسويقية وتصميم يركز على الإنسان.</span>
+        </h1>
+
+        <!-- Bio Description -->
+        <p class="hero-description" data-i18n="hero_description">
+          مهندس تقنية معلومات (2025) ومطور Full-Stack & Flutter ومصمم UI/UX، مع خبرة عملية سنتين في إدارة العمليات المحاسبية والمبيعات. أحول العمليات المالية والتجارية المعقدة إلى منتجات رقمية سهلة الاستخدام ومحكمة مالياً.
+        </p>
+
+        <!-- CTAs -->
+        <div class="hero-ctas">
+          <a href="#spotlight" class="btn btn-primary" data-i18n="hero_cta_projects">
+            تصفح مشروعي الرئيسي (المتجر مفتوح المصدر)
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a href="#contact" class="btn btn-secondary" data-i18n="hero_cta_contact">
+            تواصل معي الآن
+          </a>
+          <a href="assets/CV_Eng_Abdulrahman_Abdulhakeem.pdf" download="CV_Eng_Abdulrahman_Abdulhakeem.pdf" id="heroDownloadCvBtn" class="btn btn-emerald" target="_blank" rel="noopener">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            <span data-i18n="hero_cta_cv">تحميل السيرة الذاتية (CV) فوراً</span>
+          </a>
+        </div>
+
+        <!-- Key Metrics Row -->
+        <div class="hero-stats-row">
+          <div class="stat-card">
+            <span class="stat-number accent" data-i18n="hero_stat_exp">سنتان</span>
+            <span class="stat-label" data-i18n="hero_stat_exp_label">خبرة في العمليات المحاسبية والمبيعات</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-i18n="hero_stat_degree">2025</span>
+            <span class="stat-label" data-i18n="hero_stat_degree_label">بكالوريوس تقنية معلومات (IT)</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number accent" data-i18n="hero_stat_projects">+15</span>
+            <span class="stat-label" data-i18n="hero_stat_projects_label">مشروع برمجي وتصميم متقن</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-i18n="hero_stat_accuracy">100%</span>
+            <span class="stat-label" data-i18n="hero_stat_accuracy_label">دقة محاسبية وتكامل برمجي</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Hero Visual / Persona Card -->
+      <div class="hero-visual-card glass-card">
+        
+        <div class="floating-pill pill-1">
+          <span style="font-size:1.2rem;">⚡</span>
+          <span>ACID Transactions &amp; POS</span>
+        </div>
+
+        <div class="floating-pill pill-2">
+          <span style="font-size:1.2rem;">🎨</span>
+          <span>Modern Human-Centered UI</span>
+        </div>
+
+        <div class="dev-avatar-wrapper">
+          <img src="assets/abdulrahman-photo.jpg" alt="م. عبدالرحمن عبدالحكيم - Eng. Abdulrahman Abdulhakeem" width="360" height="420" loading="eager">
+        </div>
+
+        <div class="hero-photo-caption-card">
+          <h3 class="hero-photo-name" data-i18n="hero_photo_name">م. عبدالرحمن عبدالحكيم</h3>
+          <div class="hero-photo-role" data-i18n="hero_photo_role">مطور Full-Stack &amp; مصمم UI/UX | خبير أنظمة محاسبية</div>
+          <p class="hero-photo-desc" data-i18n="hero_photo_desc">
+            مهندس برمجيات متخصص في تحويل الأنظمة المحاسبية والعمليات التجارية المعقدة إلى تطبيقات ومتاجر رقمية سلسة ومحكمة مالياً.
+          </p>
+        </div>
+
+        <div class="hero-code-snippet">
+          <span style="color:#64748b;">// Architecting reliable business systems</span><br>
+          <span style="color:#ec4899;">const</span> engineer = {<br>
+          &nbsp;&nbsp;name: <span style="color:#34d399;">"Abdulrahman Abdulhakeem"</span>,<br>
+          &nbsp;&nbsp;mindset: [<span style="color:#38bdf8;">"Software"</span>, <span style="color:#fbbf24;">"Accounting"</span>, <span style="color:#a78bfa;">"Marketing"</span>],<br>
+          &nbsp;&nbsp;deliver: () =&gt; <span style="color:#34d399;">"Zero-Leakage Scalable Apps"</span><br>
+          };
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       2. UNIQUE EDGE & 3-PILLAR ADVANTAGE
+       ====================================================================== -->
+  <section id="about" class="section">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-subtitle" data-i18n="edge_subtitle">القيمة التنافسية النادرة</span>
+        <h2 class="section-title" data-i18n="edge_title">لماذا تختار العمل مع عبدالرحمن؟</h2>
+        <p class="section-desc" data-i18n="edge_desc">
+          البرمجة وحدها لا تكفي لصنع منتج ناجح؛ قوتي تكمن في الجمع المتجانس بين التفكير البرمجي الدقيق، والخبرة المحاسبية العميقة، والحس التسويقي والتصميمي الجذاب.
+        </p>
+      </div>
+
+      <div class="edge-grid">
+        
+        <!-- Pillar 1: Software & UI/UX -->
+        <div class="edge-card glass-card edge-dev">
+          <div class="edge-icon-box">💻</div>
+          <h3 class="edge-card-title" data-i18n="edge_card1_title">الهندسة البرمجية وتصميم UI/UX</h3>
+          <span class="edge-card-tag" data-i18n="edge_card1_tag">Full-Stack &amp; Flutter</span>
+          <p class="edge-card-desc" data-i18n="edge_card1_text">
+            بناء تطبيقات الويب والموبايل من الصفر حتى النشر، مع واجهات مستخدم عصرية تركز على سهولة الاستخدام وتخفيض خطوات المستخدم لأقل قدر ممكن.
+          </p>
+          <div class="edge-feature-list">
+            <div class="edge-feature-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span data-i18n="edge_card1_item1">تطوير واجهات فائقة السرعة والتجاوب</span>
+            </div>
+            <div class="edge-feature-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span data-i18n="edge_card1_item2">تطبيقات موبايل هجينة بـ Flutter (Android &amp; iOS)</span>
+            </div>
+            <div class="edge-feature-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span data-i18n="edge_card1_item3">قواعد بيانات SQL قوية مهيكلة لمنع تضارب البيانات</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pillar 2: Accounting & Operations -->
+        <div class="edge-card glass-card edge-acc">
+          <div class="edge-icon-box">📊</div>
+          <h3 class="edge-card-title" data-i18n="edge_card2_title">الخبرة المحاسبية والإدارية (سنتان)</h3>
+          <span class="edge-card-tag" data-i18n="edge_card2_tag">منطق الأعمال والقيود المالية</span>
+          <p class="edge-card-desc" data-i18n="edge_card2_text">
+            فهم عميق للقيود المحاسبية، دورات المخزون، الفواتير، ونظم الضريبة والخصومات، مما يضمن أنظمتك من أية أخطاء حسابية أو ثغرات مالية.
+          </p>
+          <div class="edge-feature-list">
+            <div class="edge-feature-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span data-i18n="edge_card2_item1">معرفة تفصيلية بأساس القيد المزدوج ودليل الحسابات</span>
+            </div>
+            <div class="edge-feature-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span data-i18n="edge_card2_item2">تتبع المخزون وضبط التكاليف والأرباح بدقة</span>
+            </div>
+            <div class="edge-feature-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span data-i18n="edge_card2_item3">توليد تقارير الأرباح والخسائر وموازين المراجعة آلياً</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pillar 3: Marketing & Sales -->
+        <div class="edge-card glass-card edge-mkt">
+          <div class="edge-icon-box">🚀</div>
+          <h3 class="edge-card-title" data-i18n="edge_card3_title">التسويق وإدارة المبيعات</h3>
+          <span class="edge-card-tag" data-i18n="edge_card3_tag">زيادة معدل التحويل (CRO)</span>
+          <p class="edge-card-desc" data-i18n="edge_card3_text">
+            التصميم والبرمجة من منظور زيادة المبيعات وتسهيل عمليات الشراء، مع بناء مسارات تسويقية واضحة تحفز العملاء على اتخاذ القرار بسرعة.
+          </p>
+          <div class="edge-feature-list">
+            <div class="edge-feature-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span data-i18n="edge_card3_item1">مسار دفع Checkout سلس بأقل خطوات ممكنة</span>
+            </div>
+            <div class="edge-feature-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span data-i18n="edge_card3_item2">تحليل تجربة العميل لتقليل سلات الشراء المتروكة</span>
+            </div>
+            <div class="edge-feature-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span data-i18n="edge_card3_item3">لوحات تحكم ذكية لعرض مؤشرات الأداء التسويقي (KPIs)</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Interactive Business ROI & Automation Calculator -->
+      <div class="simulator-box">
+        <div class="sim-header">
+          <h3 style="font-size:1.45rem; font-weight:800; margin-bottom:0.4rem;" data-i18n="sim_title">حاسبة التوفير الرقمي للمنشآت</h3>
+          <p style="color:var(--text-muted); font-size:0.92rem;" data-i18n="sim_desc">كم ساعة ومال توفره أتمتة نظامك المحاسبي والتجاري برمجياً؟</p>
+        </div>
+
+        <div class="sim-slider-container">
+          <div class="sim-slider-label">
+            <span data-i18n="sim_orders_label">متوسط عدد المعاملات / الفواتير شهرياً:</span>
+            <span id="simOrdersValue" class="sim-slider-val">2,500</span>
+          </div>
+          <input type="range" id="simOrdersRange" class="range-input" min="300" max="15000" step="100" value="2500" aria-label="Transactions per month slider">
+        </div>
+
+        <div class="sim-results-grid">
+          <div class="sim-stat-card">
+            <div id="simHoursSaved" class="sim-stat-val">200 ساعة</div>
+            <div class="sim-stat-lbl" data-i18n="sim_saved_hours">ساعات العمل اليدوي الموفرة شهرياً</div>
+          </div>
+          <div class="sim-stat-card">
+            <div id="simCostSaved" class="sim-stat-val" style="color:var(--primary-500);">$1,375</div>
+            <div class="sim-stat-lbl" data-i18n="sim_saved_cost">التوفير التقديري في تكلفة الأخطاء والوقت</div>
+          </div>
+          <div class="sim-stat-card">
+            <div class="sim-stat-val" style="color:var(--violet-500);">99.98%</div>
+            <div class="sim-stat-lbl" data-i18n="sim_accuracy_gain">دقة مطابقة الحسابات والمخزون</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       3. SPOTLIGHT PROJECT (CASE STUDY: OPEN SOURCE ACCOUNTING E-COMMERCE)
+       ====================================================================== -->
+  <section id="spotlight" class="section" style="background:var(--bg-surface-elevated);">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-subtitle" data-i18n="spotlight_badge">المشروع الرئيسي • دراسة حالة متكاملة</span>
+        <h2 class="section-title" data-i18n="spotlight_title">نظام المتجر الإلكتروني المحاسبي القابل للتوسع</h2>
+        <p class="section-desc" data-i18n="spotlight_type">(مفتوح المصدر - Open Source Architecture)</p>
+      </div>
+
+      <div class="spotlight-card">
+        <div class="spotlight-grid">
+          
+          <!-- Content Side -->
+          <div class="spotlight-content">
+            <div class="spotlight-badge-row">
+              <span class="badge badge-emerald">Open Source</span>
+              <span class="badge badge-primary">Flutter + Node/PHP</span>
+              <span class="badge badge-violet">Double-Entry SQL</span>
+            </div>
+
+            <div class="case-study-block">
+              <div class="case-study-label">
+                <span style="color:#ef4444;">❌</span>
+                <span data-i18n="spotlight_problem_title">المشكلة الحقيقية في السوق:</span>
+              </div>
+              <p class="case-study-text" data-i18n="spotlight_problem_text">
+                أغلب المتاجر الإلكترونية تعمل كجزر معزولة عن النظام المحاسبي والمخزني؛ مما يتطلب إدخال الفواتير يدوياً، ويسبب فروقات جرد خطيرة وأخطاء في حساب الأرباح.
+              </p>
+            </div>
+
+            <div class="case-study-block">
+              <div class="case-study-label">
+                <span style="color:var(--emerald-500);">✔</span>
+                <span data-i18n="spotlight_solution_title">الحل البرمجي المبتكر:</span>
+              </div>
+              <p class="case-study-text" data-i18n="spotlight_solution_text">
+                بناء منصة متجر متكاملة مرتبطة بلحظية بنظام قيد محاسبي مزدوج؛ بمجرد إتمام العميل للطلب، يتم حجز الكمية، وإصدار الفاتورة، وتوليد القيد المحاسبي وحساب التكلفة والربح آلياً.
+              </p>
+            </div>
+
+            <div class="case-study-label" style="margin-top:1.25rem;">
+              <span>⚙️</span>
+              <span data-i18n="spotlight_arch_title">الهيكلية والتقنيات المستخدمة:</span>
+            </div>
+
+            <div class="spotlight-features">
+              <div class="spotlight-feat-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="spotlight_feat1">تطبيق موبايل هجين للعملاء والإدارة مبني بـ Flutter (Android &amp; iOS).</span>
+              </div>
+              <div class="spotlight-feat-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="spotlight_feat2">واجهة خلفية RESTful APIs عالية الكفاءة بـ Node.js / PHP.</span>
+              </div>
+              <div class="spotlight-feat-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="spotlight_feat3">قاعدة بيانات SQL مصممة بمعايير ACID لمنع تضارب البيانات.</span>
+              </div>
+              <div class="spotlight-feat-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="spotlight_feat4">لوحة تحكم للمحاسب تتضمن ميزان المراجعة، الفواتير، وحركة الصناديق.</span>
+              </div>
+            </div>
+
+            <div class="spotlight-actions">
+              <button class="btn btn-emerald" data-open-modal="demoModal" data-i18n="spotlight_btn_demo">
+                ⚡ معاينة النظام التفاعلية (Live Simulation)
+              </button>
+              <button class="btn btn-primary" data-open-modal="prdModal" data-i18n="spotlight_btn_prd">
+                📄 وثيقة متطلبات النظام (PRD الخاصة بالمتجر)
+              </button>
+              <a href="https://github.com/Abdulrahman-Abdulhakeem" target="_blank" rel="noopener" class="btn btn-secondary">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+                <span data-i18n="spotlight_btn_github">مستودع الكود على GitHub</span>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Visual Architecture Side -->
+          <div class="spotlight-visual-side">
+            <div class="visual-mockup-wrapper">
+              <img src="assets/spotlight-mockup.svg" alt="System Architecture" width="600" height="420" loading="lazy">
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       4. TECHNICAL SKILLS MATRIX
+       ====================================================================== -->
+  <section id="skills" class="section">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-subtitle" data-i18n="skills_subtitle">الترسانة التقنية</span>
+        <h2 class="section-title" data-i18n="skills_title">المهارات والأدوات المتخصصة</h2>
+        <p class="section-desc" data-i18n="skills_desc">
+          مهارات مختارة بعناية تغطي كامل دورة حياة المنتج الرقمي: من الفكرة وواجهات المستخدم، حتى الخوادم وقواعد البيانات المالية المعقدة.
+        </p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="filter-tabs">
+        <button class="filter-tab active" data-filter="all" data-i18n="filter_all">الكل</button>
+        <button class="filter-tab" data-filter="frontend" data-i18n="filter_frontend">الواجهات وتجربة المستخدم</button>
+        <button class="filter-tab" data-filter="backend" data-i18n="filter_backend">الخوادم والمنطق الخلفي</button>
+        <button class="filter-tab" data-filter="mobile" data-i18n="filter_mobile">تطبيقات الهواتف (Flutter)</button>
+        <button class="filter-tab" data-filter="db" data-i18n="filter_db">قواعد البيانات والأنظمة المالية</button>
+      </div>
+
+      <!-- Skills Cards Grid -->
+      <div class="skills-grid">
+        
+        <!-- Skill 1: Flutter -->
+        <div class="skill-card glass-card" data-category="mobile">
+          <div class="skill-header">
+            <div class="skill-info">
+              <div class="skill-icon" style="color:#0284c7;">📱</div>
+              <div>
+                <div class="skill-title">Flutter &amp; Dart</div>
+                <div class="skill-level-badge" data-i18n="skill_lvl_expert">متقدم جداً (خبير)</div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-bar-wrapper">
+            <div class="skill-bar-fill" style="width: 95%;"></div>
+          </div>
+          <p class="skill-desc">Cross-Platform (Android &amp; iOS), State Management (Bloc / Provider), Native feel, Offline sync.</p>
+        </div>
+
+        <!-- Skill 2: UI/UX Design -->
+        <div class="skill-card glass-card" data-category="frontend">
+          <div class="skill-header">
+            <div class="skill-info">
+              <div class="skill-icon" style="color:#a78bfa;">🎨</div>
+              <div>
+                <div class="skill-title">UI/UX &amp; Figma</div>
+                <div class="skill-level-badge" data-i18n="skill_lvl_expert">متقدم جداً (خبير)</div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-bar-wrapper">
+            <div class="skill-bar-fill" style="width: 92%;"></div>
+          </div>
+          <p class="skill-desc">Wireframing, High-Fidelity Prototypes, CRO funnel optimization, Design Systems, Mobile Guidelines.</p>
+        </div>
+
+        <!-- Skill 3: HTML5, CSS3 & Bootstrap -->
+        <div class="skill-card glass-card" data-category="frontend">
+          <div class="skill-header">
+            <div class="skill-info">
+              <div class="skill-icon" style="color:#ea580c;">🌐</div>
+              <div>
+                <div class="skill-title">HTML5, CSS3, Bootstrap 5</div>
+                <div class="skill-level-badge" data-i18n="skill_lvl_expert">متقدم جداً (خبير)</div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-bar-wrapper">
+            <div class="skill-bar-fill" style="width: 98%;"></div>
+          </div>
+          <p class="skill-desc">Semantic HTML, Responsive Layouts, Fluid Typography, RTL/LTR layouts, Silky smooth CSS animations.</p>
+        </div>
+
+        <!-- Skill 4: JavaScript & Modern ES6+ -->
+        <div class="skill-card glass-card" data-category="frontend">
+          <div class="skill-header">
+            <div class="skill-info">
+              <div class="skill-icon" style="color:#eab308;">⚡</div>
+              <div>
+                <div class="skill-title">JavaScript (ES6+)</div>
+                <div class="skill-level-badge" data-i18n="skill_lvl_proficient">متقن باحتراف</div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-bar-wrapper">
+            <div class="skill-bar-fill" style="width: 90%;"></div>
+          </div>
+          <p class="skill-desc">DOM Manipulation, Async/Await, Fetch APIs, State handling, Modular architecture, Client-side logic.</p>
+        </div>
+
+        <!-- Skill 5: Node.js & REST APIs -->
+        <div class="skill-card glass-card" data-category="backend">
+          <div class="skill-header">
+            <div class="skill-info">
+              <div class="skill-icon" style="color:#22c55e;">🟢</div>
+              <div>
+                <div class="skill-title">Node.js &amp; Express</div>
+                <div class="skill-level-badge" data-i18n="skill_lvl_proficient">متقن باحتراف</div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-bar-wrapper">
+            <div class="skill-bar-fill" style="width: 88%;"></div>
+          </div>
+          <p class="skill-desc">RESTful API Design, JWT Authentication, Microservices, Event-driven logic, Business process middleware.</p>
+        </div>
+
+        <!-- Skill 6: PHP & Backend Logic -->
+        <div class="skill-card glass-card" data-category="backend">
+          <div class="skill-header">
+            <div class="skill-info">
+              <div class="skill-icon" style="color:#6366f1;">🐘</div>
+              <div>
+                <div class="skill-title">PHP (OOP &amp; MVC)</div>
+                <div class="skill-level-badge" data-i18n="skill_lvl_proficient">متقن باحتراف</div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-bar-wrapper">
+            <div class="skill-bar-fill" style="width: 85%;"></div>
+          </div>
+          <p class="skill-desc">Server-side business logic, session control, database adapters, secure payment gateway integrations.</p>
+        </div>
+
+        <!-- Skill 7: Python & Automation -->
+        <div class="skill-card glass-card" data-category="backend">
+          <div class="skill-header">
+            <div class="skill-info">
+              <div class="skill-icon" style="color:#38bdf8;">🐍</div>
+              <div>
+                <div class="skill-title">Python</div>
+                <div class="skill-level-badge" data-i18n="skill_lvl_solid">متمرس وقوي</div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-bar-wrapper">
+            <div class="skill-bar-fill" style="width: 80%;"></div>
+          </div>
+          <p class="skill-desc">Data processing scripts, Excel/CSV automations, Financial calculation models, Web scraping.</p>
+        </div>
+
+        <!-- Skill 8: Java -->
+        <div class="skill-card glass-card" data-category="backend">
+          <div class="skill-header">
+            <div class="skill-info">
+              <div class="skill-icon" style="color:#ef4444;">☕</div>
+              <div>
+                <div class="skill-title">Java</div>
+                <div class="skill-level-badge" data-i18n="skill_lvl_solid">متمرس وقوي</div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-bar-wrapper">
+            <div class="skill-bar-fill" style="width: 78%;"></div>
+          </div>
+          <p class="skill-desc">Object-Oriented Programming, Data Structures, Concurrency, Enterprise software foundational concepts.</p>
+        </div>
+
+        <!-- Skill 9: SQL & Financial Database Architecture -->
+        <div class="skill-card glass-card" data-category="db">
+          <div class="skill-header">
+            <div class="skill-info">
+              <div class="skill-icon" style="color:#10b981;">🗄️</div>
+              <div>
+                <div class="skill-title">SQL (Relational DB Design)</div>
+                <div class="skill-level-badge" data-i18n="skill_lvl_expert">متقدم جداً (خبير)</div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-bar-wrapper">
+            <div class="skill-bar-fill" style="width: 94%;"></div>
+          </div>
+          <p class="skill-desc">Normalizing commercial schemas, ACID transactions, Financial journal schemas, Indexing, Performance tuning.</p>
+        </div>
+
+        <!-- Skill 10: Git & Version Control -->
+        <div class="skill-card glass-card" data-category="backend">
+          <div class="skill-header">
+            <div class="skill-info">
+              <div class="skill-icon" style="color:#f97316;">🌿</div>
+              <div>
+                <div class="skill-title">Git &amp; GitHub</div>
+                <div class="skill-level-badge" data-i18n="skill_lvl_proficient">متقن باحتراف</div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-bar-wrapper">
+            <div class="skill-bar-fill" style="width: 90%;"></div>
+          </div>
+          <p class="skill-desc">Branching strategies, Pull requests, Open-source contributions, Versioning, CI/CD integrations.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       5. CAREER & EDUCATION TIMELINE
+       ====================================================================== -->
+  <section id="timeline" class="section" style="background:var(--bg-surface-elevated);">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-subtitle" data-i18n="timeline_subtitle">الخط الزمني والخبرات</span>
+        <h2 class="section-title" data-i18n="timeline_title">المسار المهني والأكاديمي</h2>
+        <p class="section-desc" data-i18n="timeline_desc">
+          تطور مستمر يجمع بين التحصيل الأكاديمي المتخصص في تقنية المعلومات، والخبرة العملية في ميدان الأعمال والمحاسبة.
+        </p>
+      </div>
+
+      <div class="timeline-container">
+        
+        <!-- Timeline Item 1 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-year" data-i18n="tl_item1_year">2025</span>
+            <h3 class="timeline-role" data-i18n="tl_item1_role">بكالوريوس تقنية معلومات (IT)</h3>
+            <div class="timeline-org" data-i18n="tl_item1_org">الجامعة الوطنية - تعز، اليمن</div>
+            <p class="timeline-desc" data-i18n="tl_item1_desc">
+              تخرج مع مرتبة الشرف، والتركيز على هندسة البرمجيات، شبكات الحاسوب، أمن البيانات، وبناء قواعد البيانات العلائقية المتقدمة.
+            </p>
+          </div>
+        </div>
+
+        <!-- Timeline Item 2 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-year" data-i18n="tl_item2_year">2023 - 2025 (سنتان)</span>
+            <h3 class="timeline-role" data-i18n="tl_item2_role">مسؤول العمليات المحاسبية والإدارية</h3>
+            <div class="timeline-org" data-i18n="tl_item2_org">قطاع الأعمال التجارية والتوزيع</div>
+            <p class="timeline-desc" data-i18n="tl_item2_desc">
+              إدارة القيود اليومية، مطابقة كشوفات الحسابات البنكية، الجرد الدوري للمخزون، إعداد الفواتير الضريبية، ومراقبة حركة التدفق النقدي وصافي الأرباح.
+            </p>
+          </div>
+        </div>
+
+        <!-- Timeline Item 3 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-year" data-i18n="tl_item3_year">2023 - حتى الآن</span>
+            <h3 class="timeline-role" data-i18n="tl_item3_role">أخصائي تسويق رقمي وإدارة مبيعات</h3>
+            <div class="timeline-org" data-i18n="tl_item3_org">مشاريع تجارية واستشارية</div>
+            <p class="timeline-desc" data-i18n="tl_item3_desc">
+              دراسة سلوك المستهلك، تحسين مسار التحويل بالمتاجر، صياغة عروض القيمة، وإدارة الحملات المبنية على البيانات والأرقام التحليلية.
+            </p>
+          </div>
+        </div>
+
+        <!-- Timeline Item 4 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-year" data-i18n="tl_item4_year">2024 - مستمر</span>
+            <h3 class="timeline-role" data-i18n="tl_item4_role">مطور برمجيات مستقل (Full-Stack &amp; Flutter)</h3>
+            <div class="timeline-org" data-i18n="tl_item4_org">العمل الحر والمشاريع الخاصة</div>
+            <p class="timeline-desc" data-i18n="tl_item4_desc">
+              تصميم وتنفيذ أنظمة مخصصة لإدارة نقاط البيع والمخازن، تطبيقات هواتف ذكية لنظامي أندرويد وآيفون، وربط المتاجر ببوابات الدفع وقواعد البيانات.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       6. SERVICES OFFERED
+       ====================================================================== -->
+  <section id="services" class="section">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-subtitle" data-i18n="services_subtitle">ماذا أقدم لعملائي؟</span>
+        <h2 class="section-title" data-i18n="services_title">حلول تقنية مبنية لنمو أرباحك</h2>
+        <p class="section-desc" data-i18n="services_desc">
+          خدمات شاملة مصممة خصيصاً لمساعدة الشركات والمتاجر ورواد الأعمال على أتمتة أعمالهم ورقمنتها بأعلى معايير الأمان والجودة.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        
+        <!-- Service 1 -->
+        <div class="service-card glass-card">
+          <div>
+            <div class="service-icon">🛒</div>
+            <h3 class="service-title" data-i18n="srv1_title">المتاجر والأنظمة المحاسبية المخصصة</h3>
+            <p class="service-desc" data-i18n="srv1_desc">
+              بناء متاجر إلكترونية وأنظمة ERP مصغرة تربط المبيعات بالمخزن والصندوق المحاسبي تلقائياً دون تضارب أو أخطاء يدوية.
+            </p>
+            <div class="service-bullets">
+              <div class="service-bullet">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="srv1_f1">فواتير إلكترونية متوافقة ونظام قيد مزدوج</span>
+              </div>
+              <div class="service-bullet">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="srv1_f2">إدارة المخزون متعدد الفروع وتنبيهات النواقص</span>
+              </div>
+              <div class="service-bullet">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="srv1_f3">تقارير أرباح وخسائر ومؤشرات أداء مالية دقيقة</span>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-outline" data-service-request="متجر إلكتروني مع نظام محاسبي" data-i18n="srv_btn_request">
+            طلب هذه الخدمة
+          </button>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card glass-card">
+          <div>
+            <div class="service-icon">📱</div>
+            <h3 class="service-title" data-i18n="srv2_title">تطوير تطبيقات الهواتف الذكية (Flutter)</h3>
+            <p class="service-desc" data-i18n="srv2_desc">
+              تطوير تطبيقات فائقة السرعة والسلاسة تعمل على أجهزة آيفون (iOS) وأندرويد (Android) من خلال كود برمجي موحد ومتقن.
+            </p>
+            <div class="service-bullets">
+              <div class="service-bullet">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="srv2_f1">أداء نقي 60/120 إطار في الثانية</span>
+              </div>
+              <div class="service-bullet">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="srv2_f2">دعم العمل دون اتصال بالإنترنت (Offline Mode)</span>
+              </div>
+              <div class="service-bullet">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="srv2_f3">إشعارات فورية وتكامل تام مع بوابات الدفع</span>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-outline" data-service-request="تطبيق هاتف ذكي (Flutter Android/iOS)" data-i18n="srv_btn_request">
+            طلب هذه الخدمة
+          </button>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card glass-card">
+          <div>
+            <div class="service-icon">🎨</div>
+            <h3 class="service-title" data-i18n="srv3_title">تصميم واجهات وتجربة المستخدم (UI/UX)</h3>
+            <p class="service-desc" data-i18n="srv3_desc">
+              تصميم واجهات تفاعلية تركز على المستخدم وسهولة الاستخدام، موجهة خصيصاً لرفع معدلات التحويل وإتمام الصفقات بسرعة.
+            </p>
+            <div class="service-bullets">
+              <div class="service-bullet">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="srv3_f1">نماذج تفاعلية كاملة (Figma Prototypes)</span>
+              </div>
+              <div class="service-bullet">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="srv3_f2">تصميم متجاوب لكافة الشاشات (Mobile-First)</span>
+              </div>
+              <div class="service-bullet">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="srv3_f3">اختبارات سهولة الاستخدام ومسارات العملاء</span>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-outline" data-service-request="تصميم واجهات وتجربة مستخدم (UI/UX)" data-i18n="srv_btn_request">
+            طلب هذه الخدمة
+          </button>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card glass-card">
+          <div>
+            <div class="service-icon">📈</div>
+            <h3 class="service-title" data-i18n="srv4_title">استشارات أتمتة العمليات المحاسبية</h3>
+            <p class="service-desc" data-i18n="srv4_desc">
+              مساعدتك في فحص دورتك المستندية والمحاسبية الحالية وتحويلها من الدفاتر الورقية أو ملفات الإكسل المبعثرة إلى نظام برمجي آمن.
+            </p>
+            <div class="service-bullets">
+              <div class="service-bullet">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="srv4_f1">هيكلة دليل الحسابات ومراكز التكلفة</span>
+              </div>
+              <div class="service-bullet">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="srv4_f2">أتمتة الفواتير ومطابقة الحسابات</span>
+              </div>
+              <div class="service-bullet">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span data-i18n="srv4_f3">تدريب الموظفين ونقل البيانات السابقة بأمان</span>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-outline" data-service-request="أتمتة محاسبية واستشارة منطق أعمال" data-i18n="srv_btn_request">
+            طلب هذه الخدمة
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       7. SELECTED PROJECTS GALLERY
+       ====================================================================== -->
+  <section id="projects" class="section" style="background:var(--bg-surface-elevated);">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-subtitle" data-i18n="projects_subtitle">سابقة الأعمال</span>
+        <h2 class="section-title" data-i18n="projects_title">نماذج مختارة من أعمالي</h2>
+        <p class="section-desc" data-i18n="projects_desc">
+          مشاريع متنوعة تم تصميمها وتطويرها لحل مشكلات حقيقية ورفع الكفاءة التشغيلية.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+        
+        <!-- Project 1 -->
+        <div class="project-card glass-card">
+          <div class="project-thumbnail">
+            <img src="assets/proj-erp.svg" alt="ERP System" width="400" height="220" loading="lazy">
+          </div>
+          <div class="project-body">
+            <span class="project-cat" data-i18n="proj1_cat">أنظمة محاسبية • ويب</span>
+            <h3 class="project-name" data-i18n="proj1_title">نظام ERP &amp; كاشير سحابي متكامل</h3>
+            <p class="project-text" data-i18n="proj1_desc">
+              لوحة تحكم محاسبية كاملة تدعم إدارة الفواتير، حركة الخزينة، والمخازن مع دعم العمل بنقاط البيع السريعة POS.
+            </p>
+            <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
+              <span class="badge badge-primary">PHP / Node.js</span>
+              <span class="badge badge-emerald">SQL Schema</span>
+              <span class="badge badge-violet">Bootstrap 5</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card glass-card">
+          <div class="project-thumbnail">
+            <img src="assets/proj-mobile.svg" alt="Flutter Store" width="400" height="220" loading="lazy">
+          </div>
+          <div class="project-body">
+            <span class="project-cat" data-i18n="proj2_cat">تطبيقات موبايل • iOS &amp; Android</span>
+            <h3 class="project-name" data-i18n="proj2_title">تطبيق تسوق إلكتروني متكامل (Flutter)</h3>
+            <p class="project-text" data-i18n="proj2_desc">
+              تطبيق متجر حديث يدعم السلة، التوصيل، الدفع الإلكتروني، وتتبع الطلبات لحظياً مع لوحة تحكم سحابية.
+            </p>
+            <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
+              <span class="badge badge-primary">Flutter</span>
+              <span class="badge badge-emerald">Dart</span>
+              <span class="badge badge-violet">REST API</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card glass-card">
+          <div class="project-thumbnail">
+            <img src="assets/proj-pharma.svg" alt="Pharmacy System" width="400" height="220" loading="lazy">
+          </div>
+          <div class="project-body">
+            <span class="project-cat" data-i18n="proj3_cat">قواعد بيانات • أنظمة صحية</span>
+            <h3 class="project-name" data-i18n="proj3_title">نظام إدارة الصيدليات ومستودعات الأدوية</h3>
+            <p class="project-text" data-i18n="proj3_desc">
+              إدارة تواريخ الصلاحية، الباركود، حساب هامش ربح كل صنف، وإصدار الفواتير مع حساب الضريبة آلياً.
+            </p>
+            <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
+              <span class="badge badge-emerald">SQL ACID</span>
+              <span class="badge badge-primary">JavaScript</span>
+              <span class="badge badge-violet">Barcode POS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card glass-card">
+          <div class="project-thumbnail">
+            <img src="assets/proj-realestate.svg" alt="Real Estate" width="400" height="220" loading="lazy">
+          </div>
+          <div class="project-body">
+            <span class="project-cat" data-i18n="proj4_cat">UI/UX &amp; تطوير واجهات</span>
+            <h3 class="project-name" data-i18n="proj4_title">منصة عقارات وإدارة المبيعات والمستأجرين</h3>
+            <p class="project-text" data-i18n="proj4_desc">
+              منصة تسهل إدارة عقود الإيجار، الدفعات الشهرية، والتنبيه التلقائي للمستأجرين عبر الواتساب والرسائل.
+            </p>
+            <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
+              <span class="badge badge-violet">UI/UX Figma</span>
+              <span class="badge badge-primary">Modern CSS</span>
+              <span class="badge badge-emerald">Analytics</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       8. CONTACT SECTION & CTA
+       ====================================================================== -->
+  <section id="contact" class="section">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-subtitle" data-i18n="contact_subtitle">ابدأ مشروعك القادم</span>
+        <h2 class="section-title" data-i18n="contact_title">دعنا نتحدث ونبني شيئاً استثنائياً معاً</h2>
+        <p class="section-desc" data-i18n="contact_desc">
+          سواء كنت تبحث عن مطور لبناء متجرك ونظامك المحاسبي، أو تريد استشارة تقنية، أو ترغب في ضمي لفريق عملك؛ يسعدني التواصل معك.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        
+        <!-- Direct Info Card -->
+        <div class="contact-info-card glass-card">
+          <h3 style="font-size:1.3rem; font-weight:800;" data-i18n="contact_info_title">معلومات التواصل المباشر</h3>
+          
+          <div class="contact-item">
+            <div class="contact-icon-box">📞</div>
+            <div>
+              <div class="contact-label" data-i18n="contact_phone_label">الهاتف / الواتساب:</div>
+              <div class="contact-val">
+                <a href="tel:+967737387018" dir="ltr">+967 737 387 018</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon-box">✉️</div>
+            <div>
+              <div class="contact-label" data-i18n="contact_email_label">البريد الإلكتروني:</div>
+              <div class="contact-val">
+                <a href="mailto:apodalsadhe@gmail.com" id="contactEmailLink">apodalsadhe@gmail.com</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon-box">📍</div>
+            <div>
+              <div class="contact-label" data-i18n="contact_location_label">المقر الجغرافي:</div>
+              <div class="contact-val" data-i18n="contact_location_val">تعز، اليمن (متاح للعمل عن بُعد عالمياً)</div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon-box">🕒</div>
+            <div>
+              <div class="contact-label" data-i18n="contact_hours_label">ساعات العمل:</div>
+              <div class="contact-val" style="font-size:0.92rem;" data-i18n="contact_hours_val">السبت - الخميس: 9:00 ص - 10:00 م (توقيت مكة)</div>
+            </div>
+          </div>
+
+          <a href="#" class="btn btn-emerald whatsapp-link" target="_blank" rel="noopener">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/>
+            </svg>
+            <span data-i18n="whatsapp_direct_btn">محادثة فورية عبر واتساب</span>
+          </a>
+
+          <!-- Social Links -->
+          <div class="social-links">
+            <a href="https://github.com/Abdulrahman-Abdulhakeem" target="_blank" rel="noopener" class="social-btn" title="GitHub" aria-label="GitHub Profile">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+            </a>
+            <a href="https://linkedin.com/in/abdulrahman-abdulhakeem" target="_blank" rel="noopener" class="social-btn" title="LinkedIn" aria-label="LinkedIn Profile">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+            <a href="https://behance.net/abdulrahman-abdulhakeem" target="_blank" rel="noopener" class="social-btn" title="Behance" aria-label="Behance Portfolio">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M22 7h-7v-2h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-4.225 0-6.625-3.045-6.625-6.953 0-4.148 2.668-7.047 6.559-7.047 4.195 0 6.223 3.013 5.922 7.02h-9.584c.119 2.086 1.488 3.551 3.568 3.551 1.637 0 2.646-.777 3.098-1.571h2.163zm-5.748-5.594c-.035-1.789-1.129-2.883-2.678-2.883-1.639 0-2.68 1.139-2.844 2.883h5.522zm-12.978-8.406h-5v14h5.273c3.564 0 5.727-1.75 5.727-4.475 0-1.716-.957-2.936-2.396-3.414 1.096-.465 1.795-1.578 1.795-2.99 0-2.079-1.621-3.121-5.399-3.121zm-2.5 5.5h2.188c1.328 0 2.312.449 2.312 1.611 0 1.164-.984 1.639-2.312 1.639h-2.188v-3.25zm0 5.25h2.469c1.479 0 2.531.527 2.531 1.75 0 1.221-1.053 1.75-2.531 1.75h-2.469v-3.5z"/>
+              </svg>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-card glass-card">
+          <h3 style="font-size:1.3rem; font-weight:800; margin-bottom:1.25rem;" data-i18n="form_title">أرسل لي رسالة مباشرة</h3>
+          
+          <form id="contactForm">
+            <div class="form-group">
+              <label class="form-label" for="formName" data-i18n="form_name_label">الاسم الكامل *</label>
+              <input type="text" id="formName" class="form-input" required placeholder="مثال: م. أحمد الخالد" data-i18n-placeholder="form_name_placeholder">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="formEmail" data-i18n="form_email_label">البريد الإلكتروني *</label>
+              <input type="email" id="formEmail" class="form-input" required placeholder="name@company.com" data-i18n-placeholder="form_email_placeholder">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="formPhone" data-i18n="form_phone_label">رقم الهاتف / الواتساب</label>
+              <input type="tel" id="formPhone" class="form-input" placeholder="+967 ..." data-i18n-placeholder="form_phone_placeholder">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="formType" data-i18n="form_type_label">نوع المشروع أو الاستشارة *</label>
+              <select id="formType" class="form-select" required>
+                <option value="" disabled selected data-i18n="form_type_opt_default">اختر نوع المشروع...</option>
+                <option value="متجر إلكتروني مع نظام محاسبي" data-i18n="form_type_opt1">متجر إلكتروني مع نظام محاسبي</option>
+                <option value="تطبيق هاتف ذكي (Flutter Android/iOS)" data-i18n="form_type_opt2">تطبيق هاتف ذكي (Flutter Android/iOS)</option>
+                <option value="تصميم واجهات وتجربة مستخدم (UI/UX)" data-i18n="form_type_opt3">تصميم واجهات وتجربة مستخدم (UI/UX)</option>
+                <option value="أتمتة محاسبية واستشارة منطق أعمال" data-i18n="form_type_opt4">أتمتة محاسبية واستشارة منطق أعمال</option>
+                <option value="فرصة توظيف أو مشروع مخصص آخر" data-i18n="form_type_opt5">فرصة توظيف أو مشروع مخصص آخر</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="formMessage" data-i18n="form_msg_label">تفاصيل المشروع أو متطلباتك *</label>
+              <textarea id="formMessage" class="form-textarea" required placeholder="اكتب نبذة عن مشروعك، الميزانية التقريبية، والجدول الزمني المفضل..." data-i18n-placeholder="form_msg_placeholder"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%;" data-i18n="form_submit_btn">
+              إرسال الرسالة الآن
+            </button>
+
+            <div id="formStatus" class="form-status"></div>
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       FOOTER
+       ====================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="logo-text">
+        <span class="logo-name" style="font-size:1.2rem; font-weight:800;">م. عبدالرحمن عبدالحكيم</span>
+      </div>
+      <p class="footer-rights" data-i18n="footer_rights">جميع الحقوق محفوظة للمهندس عبدالرحمن عبدالحكيم © 2026.</p>
+      <p class="footer-tagline" data-i18n="footer_tagline">صُنع بإتقان يجمع بين دقة الأرقام وجمال الكود.</p>
+    </div>
+  </footer>
+
+  <!-- ======================================================================
+       MOBILE BOTTOM NAVIGATION BAR (iPhone & Android Optimization)
+       ====================================================================== -->
+  <nav class="mobile-bottom-bar" aria-label="Mobile Navigation">
+    <a href="#home" class="mobile-bottom-item active">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+      <span data-i18n="nav_home">الرئيسية</span>
+    </a>
+    <a href="#about" class="mobile-bottom-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+      <span data-i18n="nav_about">الميزة</span>
+    </a>
+    <a href="#spotlight" class="mobile-bottom-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+      <span data-i18n="nav_spotlight">المشروع</span>
+    </a>
+    <a href="#services" class="mobile-bottom-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+      <span data-i18n="nav_services">الخدمات</span>
+    </a>
+    <a href="#contact" class="mobile-bottom-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+      <span data-i18n="nav_contact">تواصل</span>
+    </a>
+  </nav>
+
+  <!-- Floating Direct WhatsApp Button -->
+  <a href="#" class="floating-whatsapp-btn whatsapp-link" aria-label="Instant WhatsApp Chat" title="محادثة واتساب فورية" target="_blank" rel="noopener">
+    <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/>
+    </svg>
+  </a>
+
+  <!-- Back to Top Button -->
+  <button id="backToTopBtn" class="back-to-top" aria-label="Back to top" title="العودة للأعلى">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <!-- ======================================================================
+       MODAL 1: INTERACTIVE LIVE SYSTEM SIMULATION (DEMO)
+       ====================================================================== -->
+  <div id="demoModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="demoModalTitle">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 id="demoModalTitle" class="modal-title" data-i18n="demo_modal_title">محاكاة حية لنظام المتجر والمحاسبة الآلية</h3>
+        <button class="modal-close" aria-label="Close modal">✕</button>
+      </div>
+      <div class="modal-body">
+        <p style="color:var(--text-muted); font-size:0.95rem; margin-bottom:1.5rem;" data-i18n="demo_modal_desc">
+          قم بتجربة إجراء عملية بيع تجريبية وشاهد كيف يتأثر المخزون والقيد المحاسبي لحظياً!
+        </p>
+
+        <!-- Product Simulation Card -->
+        <div style="background:var(--bg-surface-elevated); border:1px solid var(--border-medium); border-radius:var(--radius-lg); padding:1.5rem; margin-bottom:1.5rem;">
+          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
+            <div>
+              <h4 style="font-size:1.15rem; font-weight:700;" data-i18n="demo_product">منتج تجريبي: سماعات لاسلكية برو</h4>
+              <div style="display:flex; gap:1rem; font-size:0.88rem; margin-top:0.35rem;">
+                <span style="color:var(--emerald-500); font-weight:700;" data-i18n="demo_price">السعر: 150$</span>
+                <span style="color:var(--text-dim);" data-i18n="demo_cost">تكلفة البضاعة: 90$</span>
+              </div>
+            </div>
+            <div style="display:flex; gap:0.75rem;">
+              <div style="text-align:center; background:var(--bg-surface); padding:0.6rem 1.2rem; border-radius:var(--radius-md); border:1px solid var(--border-subtle);">
+                <div style="font-size:0.75rem; color:var(--text-dim);" data-i18n="demo_stock_label">المخزون الحالي بالمستودع:</div>
+                <div style="font-size:1.4rem; font-weight:800; color:var(--primary-500);">
+                  <span id="demoStockCount">24</span> <span data-i18n="demo_items" style="font-size:0.9rem;">قطعة</span>
+                </div>
+              </div>
+              <div style="text-align:center; background:var(--bg-surface); padding:0.6rem 1.2rem; border-radius:var(--radius-md); border:1px solid var(--border-subtle);">
+                <div style="font-size:0.75rem; color:var(--text-dim);">إجمالي المبيعات:</div>
+                <div id="demoTotalSales" style="font-size:1.4rem; font-weight:800; color:var(--emerald-500);">$0</div>
+              </div>
+            </div>
+          </div>
+
+          <div style="display:flex; gap:0.75rem; margin-top:1.25rem; flex-wrap:wrap;">
+            <button id="demoBuyBtn" class="btn btn-emerald" data-i18n="demo_btn_buy">
+              ⚡ إتمام عملية بيع فوري (+150$)
+            </button>
+            <button id="demoResetBtn" class="btn btn-secondary" data-i18n="demo_btn_reset">
+              إعادة ضبط المحاكاة
+            </button>
+          </div>
+        </div>
+
+        <!-- Ledger Live Audit Log -->
+        <h4 style="font-size:0.95rem; font-weight:700; margin-bottom:0.75rem;" data-i18n="demo_log_title">سجل الأحداث المالية والقيود المتولدة آلياً:</h4>
+        <div id="demoLedgerLog" style="max-height:220px; overflow-y:auto; border:1px solid var(--border-subtle); border-radius:var(--radius-md); padding:0.75rem; background:var(--bg-input);">
+          <div style="color:var(--text-dim); font-size:0.85rem; text-align:center; padding:1rem;">
+            جاهز للمحاكاة... انقر فوق زر الشراء لتوليد القيود المحاسبية
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-close-modal data-i18n="cv_close">إغلاق</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       MODAL 2: SYSTEM PRD ARCHITECTURE VIEWER
+       ====================================================================== -->
+  <div id="prdModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="prdModalTitle">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 id="prdModalTitle" class="modal-title" data-i18n="prd_modal_title">وثيقة متطلبات نظام المتجر المحاسبي (PRD)</h3>
+        <button class="modal-close" aria-label="Close modal">✕</button>
+      </div>
+      <div class="modal-body" style="font-size:0.92rem; line-height:1.7;">
+        
+        <div style="background:rgba(59, 130, 246, 0.1); border-inline-start:4px solid var(--primary-500); padding:1rem; border-radius:var(--radius-sm); margin-bottom:1.5rem;">
+          <h4 style="color:var(--primary-500); font-weight:700; margin-bottom:0.25rem;">ملخص معمارية المشروع مفتوح المصدر</h4>
+          <p style="color:var(--text-muted); font-size:0.88rem;">
+            نظام متجر إلكتروني وقنوات بيع متعددة مربوط بحلقات متزامنة مع قيود اليومية ومستودعات المخزون بدقة مصرفية ACID.
+          </p>
+        </div>
+
+        <h4 style="font-size:1.05rem; font-weight:700; color:var(--text-main); margin-bottom:0.5rem;">1. الوحدات البرمجية الأساسية (Core Modules):</h4>
+        <ul style="list-style:disc; padding-inline-start:1.5rem; color:var(--text-muted); margin-bottom:1.25rem;">
+          <li><strong>وحدة المبيعات ونقاط البيع (POS &amp; Storefront):</strong> سلة شراء سريعة، قارئ باركود، فواتير ضريبية، وطباعة إيصالات حرارية.</li>
+          <li><strong>وحدة إدارة المخزون (Multi-Warehouse Inventory):</strong> تتبع دقيق للأرصدة، تنبيهات حد الطلب، وإدارة تواريخ الصلاحية ورقم الوجبة.</li>
+          <li><strong>محرك الحسابات الآلي (Automated Ledger Engine):</strong> توليد تلقائي للقيود (مدين/دائن) مع كل فاتورة أو مرتجع دون تدخل يدوي.</li>
+          <li><strong>لوحة تحكم الإدارة المالية (Executive CFO Dashboard):</strong> ميزان المراجعة، قائمة الأرباح والخسائر، وحركة الخزينة اللحظية.</li>
+        </ul>
+
+        <h4 style="font-size:1.05rem; font-weight:700; color:var(--text-main); margin-bottom:0.5rem;">2. هيكلية قاعدة البيانات العلائقية (Relational SQL Schema):</h4>
+        <div style="background:var(--bg-input); border:1px solid var(--border-subtle); border-radius:var(--radius-md); padding:1rem; font-family:monospace; font-size:0.82rem; margin-bottom:1.25rem; overflow-x:auto;">
+          • accounts (id, code, name, type [asset, liability, equity, revenue, expense], balance)<br>
+          • journal_entries (id, date, reference_type, reference_id, notes, status)<br>
+          • journal_lines (id, entry_id, account_id, debit, credit, description)<br>
+          • products (id, sku, barcode, cost_price, selling_price, stock_qty)<br>
+          • orders &amp; order_items (id, customer_id, total_amount, payment_status, created_at)
+        </div>
+
+        <h4 style="font-size:1.05rem; font-weight:700; color:var(--text-main); margin-bottom:0.5rem;">3. الأمان وتوافق الأنظمة:</h4>
+        <p style="color:var(--text-muted); margin-bottom:1rem;">
+          المشروع يدعم النشر السحابي عبر Docker، مع توفير واجهات RESTful APIs موثقة بـ Swagger لسهولة ربطه بتطبيقات Flutter أو أي منصات خارجية.
+        </p>
+
+      </div>
+      <div class="modal-footer">
+        <a href="https://github.com/Abdulrahman-Abdulhakeem" target="_blank" rel="noopener" class="btn btn-primary">
+          زيارة المستودع على GitHub
+        </a>
+        <button class="btn btn-secondary" data-close-modal data-i18n="cv_close">إغلاق</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       MODAL 3: CV DOWNLOAD LEAD CAPTURE & ACTIVATION
+       ====================================================================== -->
+  <div id="cvDownloadModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="cvDownloadModalTitle">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 id="cvDownloadModalTitle" class="modal-title" data-i18n="cv_download_modal_title">تحميل السيرة الذاتية المهنية (CV)</h3>
+        <button class="modal-close" aria-label="Close modal">✕</button>
+      </div>
+      <div class="modal-body">
+        
+        <!-- Direct Instant Download Button -->
+        <a href="assets/CV_Eng_Abdulrahman_Abdulhakeem.pdf" download="CV_Eng_Abdulrahman_Abdulhakeem.pdf" id="modalDirectDownloadBtn" class="btn btn-emerald" target="_blank" rel="noopener" style="width:100%; font-size:1.05rem; padding:0.9rem; margin-bottom:1.25rem; justify-content:center;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          <span>تحميل السيرة الذاتية بصيغة PDF فوراً</span>
+        </a>
+
+        <!-- Optional Email Field -->
+        <div style="background:var(--bg-surface-elevated); border:1px solid var(--border-subtle); border-radius:var(--radius-md); padding:1rem; margin-bottom:1.25rem;">
+          <label class="form-label" for="cvLeadContact" style="font-size:0.85rem; margin-bottom:0.4rem;">
+            ✉️ أو أدخل بريدك الإلكتروني لاستلام نسخة وتأكيد التحميل (اختياري):
+          </label>
+          <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
+            <input type="text" id="cvLeadContact" class="form-input" style="flex:1; min-width:180px;" placeholder="name@company.com">
+            <button type="button" id="cvLeadSubmitBtn" class="btn btn-primary" style="flex-shrink:0;">
+              إرسال وتحميل
+            </button>
+          </div>
+          <div id="cvLeadStatus" class="form-status" style="margin-top:0.75rem;"></div>
+        </div>
+
+        <div style="text-align:center;">
+          <button id="cvDirectViewBtn" class="btn btn-outline" style="width:100%;">
+            👁️ استعراض السيرة الذاتية مباشرة على الشاشة
+          </button>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-close-modal data-i18n="cv_close">إغلاق</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       MODAL 4: EXECUTIVE CV / RESUME VIEWER
+       ====================================================================== -->
+  <div id="cvModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="cvModalTitle">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 id="cvModalTitle" class="modal-title" data-i18n="cv_modal_title">السيرة الذاتية المهنية (Curriculum Vitae)</h3>
+        <button class="modal-close" aria-label="Close modal">✕</button>
+      </div>
+      <div class="modal-body" style="line-height:1.75;">
+        
+        <!-- Header Info -->
+        <div style="border-bottom:2px solid var(--border-medium); padding-bottom:1.25rem; margin-bottom:1.5rem; text-align:center;">
+          <h2 style="font-size:1.6rem; font-weight:900;">م. عبدالرحمن عبدالحكيم</h2>
+          <div style="color:var(--primary-500); font-weight:700; font-size:0.95rem; margin-top:0.25rem;" data-i18n="cv_modal_sub">
+            مطور برمجيات شامل ومصمم تجربة المستخدم | خبير منطق الأعمال والأنظمة المحاسبية
+          </div>
+          <div style="font-size:0.85rem; color:var(--text-muted); margin-top:0.5rem;" data-i18n="cv_contact_val">
+            هاتف / واتساب: +967737387018 | تعز، اليمن | بريد: apodalsadhe@gmail.com
+          </div>
+        </div>
+
+        <!-- Summary -->
+        <div style="margin-bottom:1.5rem;">
+          <h4 style="font-size:1.1rem; font-weight:800; color:var(--text-main); margin-bottom:0.4rem;" data-i18n="cv_summary_title">الملخص المهني:</h4>
+          <p style="color:var(--text-muted); font-size:0.92rem;" data-i18n="cv_summary_text">
+            مهندس تقنية معلومات ومطور شامل (Full-Stack &amp; Flutter) مع خلفية ميدانية قوية لمدة سنتين في إدارة العمليات المحاسبية والمبيعات. متخصص في هندسة وبناء الأنظمة التجارية والمتاجر الإلكترونية المتكاملة مالياً دون أخطاء، وتحويل المتطلبات المعقدة إلى واجهات سلسة وجذابة ترفع معدلات المبيعات.
+          </p>
+        </div>
+
+        <!-- Education -->
+        <div style="margin-bottom:1.5rem;">
+          <h4 style="font-size:1.1rem; font-weight:800; color:var(--text-main); margin-bottom:0.4rem;" data-i18n="cv_edu_title">التعليم الأكاديمي:</h4>
+          <p style="color:var(--text-muted); font-size:0.92rem;" data-i18n="cv_edu_val">
+            بكالوريوس تقنية معلومات (IT) - الجامعة الوطنية، تعز، اليمن (دفعة 2025).
+          </p>
+        </div>
+
+        <!-- Core Skills -->
+        <div style="margin-bottom:1.5rem;">
+          <h4 style="font-size:1.1rem; font-weight:800; color:var(--text-main); margin-bottom:0.4rem;" data-i18n="cv_skills_title">المهارات الرئيسية:</h4>
+          <p style="color:var(--text-muted); font-size:0.92rem;" data-i18n="cv_skills_val">
+            Flutter (iOS/Android), JavaScript/TypeScript, Node.js, PHP, Python, Java, SQL (Database Architecture), HTML5/CSS3/Bootstrap 5, UI/UX (Figma), Double-Entry Accounting Logic, Sales Funnels &amp; Conversion Optimization.
+          </p>
+        </div>
+
+      </div>
+      <div class="modal-footer" style="display:flex; flex-wrap:wrap; gap:0.75rem;">
+        <a href="assets/CV_Eng_Abdulrahman_Abdulhakeem.pdf" download="CV_Eng_Abdulrahman_Abdulhakeem.pdf" target="_blank" rel="noopener" class="btn btn-emerald" style="flex-grow:1;">
+          📥 تحميل ملف الـ PDF المباشر
+        </a>
+        <button id="printCvBtn" class="btn btn-primary" data-i18n="cv_download_pdf">
+          🖨️ طباعة مباشرة
+        </button>
+        <button class="btn btn-secondary" data-close-modal data-i18n="cv_close">إغلاق</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toastNotification" class="toast-notification">
+    <span id="toastIcon">✔</span>
+    <span id="toastMessage"></span>
+  </div>
+
+  <!-- Scripts (v=2.2 for fresh mobile cache) -->
+  <script src="js/i18n.js?v=2.2"></script>
+  <script src="js/app.js?v=2.2"></script>
+</body>
+</html>
