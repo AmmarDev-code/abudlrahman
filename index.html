@@ -22,9 +22,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <!-- Custom Stylesheets (v=2.2 for fresh mobile cache) -->
-  <link rel="stylesheet" href="css/style.css?v=2.2">
-  <link rel="stylesheet" href="css/animations.css?v=2.2">
+  <!-- Custom Stylesheets (v=2.3 for fresh mobile cache) -->
+  <link rel="stylesheet" href="css/style.css?v=2.3">
+  <link rel="stylesheet" href="css/animations.css?v=2.3">
 </head>
 <body>
 
@@ -447,10 +447,92 @@
 
           </div>
 
-          <!-- Visual Architecture Side -->
+          <!-- Visual Architecture Side (Native Fluid Component) -->
           <div class="spotlight-visual-side">
-            <div class="visual-mockup-wrapper">
-              <img src="assets/spotlight-mockup.svg" alt="System Architecture" width="600" height="420" loading="lazy">
+            <div class="architecture-showcase-card">
+              <!-- Window / Terminal Header -->
+              <div class="arch-window-header">
+                <div class="arch-window-dots">
+                  <span class="dot dot-red"></span>
+                  <span class="dot dot-amber"></span>
+                  <span class="dot dot-emerald"></span>
+                </div>
+                <div class="arch-window-title" data-i18n="arch_title">معمارية النظام المتزامن (Real-Time Architecture)</div>
+                <span class="arch-badge-live">LIVE ACID</span>
+              </div>
+
+              <!-- Nodes Grid / Flow -->
+              <div class="arch-nodes-grid">
+                <!-- Node 1: Mobile App -->
+                <div class="arch-node-box node-client">
+                  <div class="node-icon-box">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                      <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                    </svg>
+                  </div>
+                  <div class="node-content">
+                    <h5 class="node-title" data-i18n="arch_node1_title">تطبيق الموبايل</h5>
+                    <p class="node-tech" data-i18n="arch_node1_sub">Flutter (iOS & Android)</p>
+                    <span class="node-tag" data-i18n="arch_node1_tag">المتجر &amp; الكاشير POS</span>
+                  </div>
+                </div>
+
+                <div class="arch-connector">
+                  <span class="connector-pill">REST / JSON</span>
+                </div>
+
+                <!-- Node 2: Core Backend -->
+                <div class="arch-node-box node-core">
+                  <div class="node-icon-box">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                      <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                      <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                      <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                    </svg>
+                  </div>
+                  <div class="node-content">
+                    <h5 class="node-title" data-i18n="arch_node2_title">الواجهة الخلفية</h5>
+                    <p class="node-tech" data-i18n="arch_node2_sub">Node.js / PHP</p>
+                    <span class="node-tag" data-i18n="arch_node2_tag">معاملات ACID مصرفية</span>
+                  </div>
+                </div>
+
+                <div class="arch-connector">
+                  <span class="connector-pill">SQL Ledger</span>
+                </div>
+
+                <!-- Node 3: Double-Entry DB -->
+                <div class="arch-node-box node-db">
+                  <div class="node-icon-box">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                      <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                      <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                    </svg>
+                  </div>
+                  <div class="node-content">
+                    <h5 class="node-title" data-i18n="arch_node3_title">قاعدة البيانات</h5>
+                    <p class="node-tech" data-i18n="arch_node3_sub">نظام القيد المزدوج</p>
+                    <span class="node-tag" data-i18n="arch_node3_tag">قيود مالية مؤتمتة</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Real-time Accounting Sync Flow Banner -->
+              <div class="arch-flow-banner">
+                <div class="flow-header">
+                  <span class="flow-pulse"></span>
+                  <strong data-i18n="arch_flow_title">حلقة المزامنة المحاسبية الفورية مع كل طلب:</strong>
+                </div>
+                <ol class="flow-steps-list">
+                  <li data-i18n="arch_step1">إتمام الطلب من العميل أو الكاشير</li>
+                  <li data-i18n="arch_step2">توليد قيد المبيعات (مدين: الصندوق / دائن: المبيعات)</li>
+                  <li data-i18n="arch_step3">تحديث المخزون (مدين: تكلفة البضاعة / دائن: المخزن)</li>
+                </ol>
+              </div>
+
             </div>
           </div>
 
@@ -1370,8 +1452,8 @@
     <span id="toastMessage"></span>
   </div>
 
-  <!-- Scripts (v=2.2 for fresh mobile cache) -->
-  <script src="js/i18n.js?v=2.2"></script>
-  <script src="js/app.js?v=2.2"></script>
+  <!-- Scripts (v=2.3 for fresh mobile cache) -->
+  <script src="js/i18n.js?v=2.3"></script>
+  <script src="js/app.js?v=2.3"></script>
 </body>
 </html>

@@ -103,6 +103,22 @@ const translations = {
     spotlight_btn_github: "مستودع الكود على GitHub",
     spotlight_btn_prd: "وثيقة متطلبات النظام (PRD الخاصة بالمتجر)",
 
+    // Architecture Showcase Component
+    arch_title: "معمارية النظام المتزامن (Real-Time Architecture)",
+    arch_node1_title: "تطبيق الموبايل",
+    arch_node1_sub: "Flutter (iOS & Android)",
+    arch_node1_tag: "المتجر & الكاشير POS",
+    arch_node2_title: "الواجهة الخلفية",
+    arch_node2_sub: "Node.js / PHP",
+    arch_node2_tag: "معاملات ACID مصرفية",
+    arch_node3_title: "قاعدة البيانات",
+    arch_node3_sub: "نظام القيد المزدوج",
+    arch_node3_tag: "قيود مالية مؤتمتة",
+    arch_flow_title: "حلقة المزامنة المحاسبية الفورية مع كل طلب:",
+    arch_step1: "إتمام الطلب من العميل أو الكاشير",
+    arch_step2: "توليد قيد المبيعات (مدين: الصندوق / دائن: المبيعات)",
+    arch_step3: "تحديث المخزون (مدين: تكلفة البضاعة / دائن: المخزن)",
+
     // Interactive Demo Modal
     demo_modal_title: "محاكاة حية لنظام المتجر والمحاسبة الآلية",
     demo_modal_desc: "قم بتجربة إجراء عملية بيع تجريبية وشاهد كيف يتأثر المخزون والقيد المحاسبي لحظياً!",
@@ -374,6 +390,22 @@ const translations = {
     spotlight_btn_demo: "Interactive System Simulation (Live Demo)",
     spotlight_btn_github: "View GitHub Repository",
     spotlight_btn_prd: "System PRD Specifications",
+
+    // Architecture Showcase Component
+    arch_title: "Real-Time System Architecture",
+    arch_node1_title: "Mobile Application",
+    arch_node1_sub: "Flutter (iOS & Android)",
+    arch_node1_tag: "Store & POS Cashier",
+    arch_node2_title: "RESTful Core",
+    arch_node2_sub: "Node.js / PHP",
+    arch_node2_tag: "Banking-Grade ACID",
+    arch_node3_title: "SQL Database",
+    arch_node3_sub: "Double-Entry Ledger",
+    arch_node3_tag: "Automated Journals",
+    arch_flow_title: "Real-Time Accounting Sync Flow per Order:",
+    arch_step1: "Order completed by shopper or cashier",
+    arch_step2: "Sales journal: DR Cash Account / CR Sales Revenue",
+    arch_step3: "Inventory journal: DR COGS / CR Inventory Asset",
 
     // Interactive Demo Modal
     demo_modal_title: "Live Simulation: Accounting E-Commerce Sync",
